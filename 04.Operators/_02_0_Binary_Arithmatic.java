@@ -1,4 +1,4 @@
-public class _02_Binary {
+public class _02_Binary_Arithmatic {
 
     public static void main(String[] args) {
       
