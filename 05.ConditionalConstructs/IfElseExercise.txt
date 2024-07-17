@@ -64,11 +64,9 @@ Expected Output :
 The candidate is not eligible for admission.
  
 
-11. Write a Java program to calculate the root of a Quadratic Equation and find out that it is real,imaginary or complex. 
-Test Data : 1 5 7
+11. Write a Java program to calculate the root of a Quadratic Equation and find out that it is real,imaginary or no solution. 
+Test Data : 1 -7 10
 Expected Output :
-Root are imaginary;
-No solution.
  
 
 12. Write a Java program to read roll no and marks of three subjects and calculate the total, percentage and division. 
