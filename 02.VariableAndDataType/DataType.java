@@ -2,6 +2,9 @@ public class DataType {
 
     public static void main(String[] args) {
         
+        // Primitive (fundamental) data type eg. int,char,float,double, etc.
+        // non-primitive(derived) data type eg. Array,Strings,Class,ENUM etc
+
         byte b=127; // 1 byte = 8 bits
         short s=578; //2 bytes
         int i=89; //4
