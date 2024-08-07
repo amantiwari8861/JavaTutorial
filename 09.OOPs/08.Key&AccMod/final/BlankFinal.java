@@ -4,6 +4,7 @@ class Person
     Person()
     {
         aadharNo=12345678L;
+        // aadharNo=5567767L;// error
     }
     void changeAadharNo(long aadharNo)
     {
