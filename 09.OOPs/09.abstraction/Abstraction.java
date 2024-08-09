@@ -1,17 +1,10 @@
 import java.util.Scanner;
 
-class Employee
+abstract class Employee
 {
     double salary;
-    void calculateSalary(double time)
-    {
-        salary=100*time*30;
-    }
-    void showSalary()
-    {
-        System.out.println("Showing Employee Salary");
-        System.out.println("Salary :"+salary);
-    }
+    abstract void calculateSalary(double time);
+
 }
 class PermanentEmployee extends Employee
 {
@@ -25,7 +18,6 @@ class PermanentEmployee extends Employee
     {
         salary=200*time*30;
     }
-    @Override
     void showSalary()
     {
         System.out.println("Permanent Employee details ");
@@ -53,27 +45,12 @@ class Intern extends Employee
 }
 
 
-public class DynamicBinding {
+
+public class Abstraction {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the profile:");
-        String profile=sc.nextLine();
+        
+        PermanentEmployee p=new PermanentEmployee();
 
-        Employee emp=null;
-        if (profile.equalsIgnoreCase("intern")) 
-            emp=new Intern();
-        else if(profile.equalsIgnoreCase("permanent"))
-            emp=new PermanentEmployee();
-        else
-            emp=new Employee();
-
-        System.out.print("how many hours u worked :");
-        emp.calculateSalary(sc.nextDouble());
-        emp.showSalary();
-        // emp.getTravelAllowance();
-        // emp.deductHealthInsurancePremium();
-
-        sc.close();
     }
 }
