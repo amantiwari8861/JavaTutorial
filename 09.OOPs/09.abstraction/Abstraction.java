@@ -1,10 +1,18 @@
 import java.util.Scanner;
 
-abstract class Employee
+abstract class Person
 {
+    String name;
+    long mobileNo;
+    char gender;
+    abstract void tellMeAboutYourself(); 
+}
+abstract class Employee extends Person
+{
+    int empId;
     double salary;
     abstract void calculateSalary(double time);
-
+    abstract void showSalary();
 }
 class PermanentEmployee extends Employee
 {
@@ -47,10 +55,29 @@ class Intern extends Employee
 
 
 public class Abstraction {
-
     public static void main(String[] args) {
         
-        PermanentEmployee p=new PermanentEmployee();
+        // PermanentEmployee p=new PermanentEmployee();
+
+        // Employee emp=new Employee();
+        Employee emp=new PermanentEmployee();
+        emp.calculateSalary(8);
+        emp.showSalary();
+        // emp.deductHealthInsurancePremium();
 
     }
 }
+
+/**
+ * Abstract classes gives 0 to 100% abstraction
+ * Difference Between Concrete class and Abstract class 
+ * Key Differences:
+ * Instantiation:
+ * Concrete classes can be instantiated, while abstract classes cannot.
+ * Implementation:
+ * Concrete classes provide complete implementation for all methods, while abstract classes may have abstract methods without implementation.
+ * Purpose:
+ * Concrete classes represent specific objects, while abstract classes define common characteristics and behaviors for a group of related classes.
+ * Keyword:
+ * Concrete classes do not require any special keyword, while abstract classes are declared using the abstract keyword.
+ */
