@@ -13,7 +13,6 @@ interface Employee
     // {
     // }
 }
-
 public class InterFaces {
 
     public static void main(String[] args) {
