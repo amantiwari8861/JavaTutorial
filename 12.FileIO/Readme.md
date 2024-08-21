@@ -1,0 +1,1 @@
+#  Stream : character and binary(ascii)
