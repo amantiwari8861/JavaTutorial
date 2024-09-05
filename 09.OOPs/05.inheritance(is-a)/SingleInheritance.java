@@ -18,6 +18,7 @@ class Human extends Mammal
     int legs;
     Human()
     {
+        super();// calling of parent class default constructor
         System.out.println("Human Created");
         legs=2;
     }

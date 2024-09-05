@@ -72,9 +72,9 @@ public class Student
     public void setMobileNo(long mobileNo) {
         this.mobileNo = mobileNo;
     }
-    @Override
-    public String toString() {
-        return "Student [id=" + id + ", name=" + name + ", fee=" + fee + ", gender=" + gender + ", isMemExpired="
-                + isMemExpired + ", dob=" + dob + ", joining=" + joining + ", mobileNo=" + mobileNo + "]";
-    }    
+    // @Override
+    // public String toString() {
+    //     return "Student [id=" + id + ", name=" + name + ", fee=" + fee + ", gender=" + gender + ", isMemExpired="
+    //             + isMemExpired + ", dob=" + dob + ", joining=" + joining + ", mobileNo=" + mobileNo + "]";
+    // }    
 }
