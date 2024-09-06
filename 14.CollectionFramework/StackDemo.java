@@ -11,7 +11,6 @@ public class StackDemo {
         books.push("C++");
         books.push("Java");
         books.push("Python");
-
         System.out.println(books);
 
         // System.out.println(books.pop());
