@@ -1,4 +1,4 @@
-public class _02_1_Binary_Relational {
+public class _02_01_Binary_Relational {
 
     public static void main(String[] args) {
         

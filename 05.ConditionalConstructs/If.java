@@ -7,9 +7,9 @@ public class If {
        // if,if-else,else if (ladder),switch
        
        Scanner sc=new Scanner(System.in);
-        // int age;
-        // System.out.println("enter ur age:");
-        // age=sc.nextInt();
+        int age;
+        System.out.println("enter ur age:");
+        age=sc.nextInt();
 
         // if (age>=18)  //true block
         // {
@@ -33,15 +33,15 @@ public class If {
         // {
         //     System.out.println("A grade!");
         // }
-        // else if (marks>=60) 
+        // else if (marks>=60 && marks<80) 
         // {
         //     System.out.println("B grade!");
         // }
-        // else if (marks>=33) 
+        // else if (marks>=33 && marks<60) 
         // {
         //     System.out.println("C grade!");
         // }
-        // else if (marks>=0) 
+        // else if (marks>=0 && marks<33) 
         // {
         //     System.out.println("Chai becho..");
         // }

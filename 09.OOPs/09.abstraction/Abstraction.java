@@ -16,21 +16,27 @@ abstract class Employee extends Person
 }
 class PermanentEmployee extends Employee
 {
+    // @Override error
     void deductHealthInsurancePremium()
     {
         salary-=salary*0.15;
         System.out.println("Getting health insurance of 10 Lac.");
         System.out.println("Deducting 15%("+(salary*0.15)+") of salary as health insurance premium ");
     }
+    @Override
     void calculateSalary(double time)
     {
         salary=200*time*30;
     }
+    @Override
     void showSalary()
     {
         System.out.println("Permanent Employee details ");
         deductHealthInsurancePremium();
         System.out.println("Salary :"+salary);
+    }
+    @Override
+    void tellMeAboutYourself() {
     }
 }
 class Intern extends Employee
@@ -50,6 +56,10 @@ class Intern extends Employee
         getTravelAllowance();
         System.out.println("Salary :"+salary);
     }
+    @Override
+    void tellMeAboutYourself() {
+        
+    }
 }
 
 
@@ -60,7 +70,8 @@ public class Abstraction {
         // PermanentEmployee p=new PermanentEmployee();
 
         // Employee emp=new Employee();
-        Employee emp=new PermanentEmployee();
+        // Employee emp=new PermanentEmployee();// generalization
+        Employee emp=new Intern();// generalization
         emp.calculateSalary(8);
         emp.showSalary();
         // emp.deductHealthInsurancePremium();
